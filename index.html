@@ -1,0 +1,146 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Predictor</title> 
+	<!-- dependencias para lo basico -->
+	<link rel="stylesheet" href="jquery.mobile-1.3.1.min.css" />
+	<script src="jquery-1.11.1.js"></script>
+	<script src="jquery.mobile-1.3.1.min.js"></script>
+	
+	<!-- lo mio -->
+	<script src="app.js"></script>
+</head> 
+	
+<body> 
+
+<!-- #home, aca comenzamos siempre, la function en js filtra por si hay que registrar o por si hay que pasar nomas -->
+<div data-role="page" id="home">
+
+	<div data-role="header" data-position="fixed">
+	    <h3>Predictor</h3>  
+	</div>
+
+	<div data-role="content">
+	
+	<p>Haga click en el boton siguiente para comenzar </p>
+        <a href="#" id="btn_Principal_Config" data-role="button">Ingresar</a>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<a href="#" id="btnCopyright" data-role="button">Copyrights y demases</a>
+	</div>
+</div>
+
+<div data-role="page" id="Principal">
+	<div data-role="header" data-position="fixed">
+	    <h3>Predictor</h3>  
+	</div>
+		<div data-role="content">
+		<a href="#" id="btnDatosUsuaria" data-role="button">Ver Datos Usuaria</a>
+		<br>
+		<a href="#" id="btnCalendario" data-role="button">Ver Calendario</a>
+		<br>
+		<a href="#" id="btnSugerencias" data-role="button">Tienes dolores?</a>
+		<br>
+		<a href="#" id="btnMetodosAnticonceptivos" data-role="button">Metodos Anticonceptivos</a>
+		<br>
+		<a href="#" id="btnCopyright" data-role="button">Copyrights y demases</a>
+	</div>
+</div>
+
+
+
+<!-- config inicial -->
+ <div data-role="page" id="ConfigInicial" data-add-back-btn="false">
+
+  <div data-role=header>
+    <h1>Introduzca datos</h1>
+  </div>
+  <div data-role="content">
+    <input type="text" id="nombreUsuaria" value="" placeholder="Nombre de Usuaria" required  autofocus/>
+    <input type="date" id="ultimoPeriodo" value="" placeholder="fecha ultimo Periodo" required/>
+    <input type="number" id="largoPeriodo" value="" placeholder="largo Periodo" min="2" max="40" step="1" value="25" required/>
+	<textarea placeholder="Notas especiales (puede quedar vacio)." name="" id="detallesExtra" data-maxage="180"></textarea>
+	
+    <a href="#" id="guardarDatos" data-role="button">Salvar Datos</a>
+	<a href="#" id="limpiarDatosRegistro" data-role="button">Limpiar</a>
+	
+  </div>
+
+</div> 
+
+<!-- ver datos usuaria -->
+ <div data-role="page" id="DatosUsuaria" data-add-back-btn="true">
+  <div data-role=header>
+    <h1>Datos de Usuaria</h1>
+	<!--<a href="#" data-role="button" class="ui-btn-right" id="clearAllNotesBtn">Clear</a>-->
+	
+  </div>
+
+  <div id="note-list" data-role="content">
+  
+   </div>
+   
+   <a href="#" data-role="button" id="eliminarConfigs">Eliminar Datos!!</a>
+
+</div>
+
+<!-- #sugerencias -->
+ <div data-role="page" id="sugerencias" data-add-back-btn="true">
+
+  <div data-role=header>
+    <h1>Tips Utiles</h1>
+  </div>
+  <div data-role="content">
+    	<strong>CopyRight</strong></h1>
+		Este producto esta basado en los siguientes softwares de codígo libre:
+
+	</div>
+</div>
+
+<!-- #MetodosAnticonceptivos -->
+ <div data-role="page" id="MetodosAnticonceptivos" data-add-back-btn="true">
+
+  <div data-role=header>
+    <h1>Metodos Anticonceptivos</h1>
+  </div>
+  <div data-role="content">
+    	<strong>CopyRight</strong></h1>
+		Este producto esta basado en los siguientes softwares de codígo libre:
+
+	</div>
+</div>
+
+<!-- ultima pag : #derechos y disclaimer -->
+ <div data-role="page" id="copyright_disclaimer" data-add-back-btn="true">
+
+  <div data-role=header>
+    <h1>Legal</h1>
+  </div>
+  <div data-role="content">
+    	<strong>CopyRight</strong></h1>
+		Este producto esta basado en los siguientes softwares de codígo libre:
+		
+		<br><br>
+		<strong>jquery.mobile-1.3.1.min </strong>
+		<br>
+		http://jquerymobile.com
+		
+		<br><br>
+		<strong>jquery-1.11.1.min </strong>
+		<br>
+		http://jquery.com/
+	</div>
+</div>
+
+</body>
+</html>

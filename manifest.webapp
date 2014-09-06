@@ -1,0 +1,17 @@
+{
+    "version":"1.0",
+	"name": "Predictor",
+    "description": "Esta app informa al hombre cuando no debe molestar a la mujer.",
+    "launch_path": "/index.html",
+    "icons": {
+        "16": "/images/erizo_016.png",
+        "32": "/images/erizo_032.png",
+        "48": "/images/erizo_048.png",
+        "128": "/images/erizo_128.png"
+    },
+	"developer": {
+        "name": "Rosa Muñoz & Cristian Larco",
+        "url": "http://www.usach.cl"
+    },
+    "default_locale": "es"
+}
